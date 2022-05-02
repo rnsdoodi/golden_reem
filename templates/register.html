@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<link rel="icon" type="image/x-icon" href="/static/assets/favicon2.ico" />
+<div class="box">
+	<h1>تسجيل حساب جديد</h1>
+     {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        {% for message in messages %}
+         <p style="color:white;text-align:center; background-color:blue; ">{{ message }}</p>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+    <form action="{{ url_for('register') }}" method="post">
+    	<input type="text" name="name" placeholder="الاسم" required="required" />
+		<input type="email" name="email" placeholder="البريد الالكتروني" required="required" />
+        <input type="password" name="password" placeholder="كلمة المرور" required="required" />
+        <button type="submit" class="btn btn-primary btn-block btn-large">تسجيل</button>
+    </form>
+
+</div>
+
+{% endblock %}

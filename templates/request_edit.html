@@ -1,0 +1,47 @@
+{% extends 'bootstrap/base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+<link rel="icon" type="image/x-icon" href="/static/assets/favicon2.ico" />
+{%include "header.html"%}
+{% block styles %}
+  {{ super() }}
+
+<br><br><br><br><br><br><br><br><br>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+{% endblock %}
+
+{% block title %}تعديل بيانات العميل {% endblock %}
+
+{% block content %}
+<br>
+<div class="content">
+
+    <h1 class="heading" style="text-align:center"><b><u>تعديل حالة الطلب للعميل  ({{selection.name}})</u></b> </h1>
+    <div class="heading">
+<br>
+    <h1 class="heading" style="text-align:center"><a href="{{url_for('follow')}}" class="btn btn-dark"> العودة إلى صفحة التعديل </a> </h1>
+</div>
+</div>
+
+<br><br>
+<div class="content">
+ {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        {% for message in messages %}
+         <p style="color:white;text-align:center; background-color:blue;">{{ message }}</p>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+    <div class="content">
+      {{ wtf.quick_form(form,novalidate=True,button_map={'submit':'primary'}, form_type="horizontal",horizontal_columns=('md',5, 5))}}
+</div>
+
+
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+{%include "footer.html"%}
+    {% endblock %}
+
+
+

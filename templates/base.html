@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>لوحة تحكم الطلبات </title>
+    <link rel="icon" type="image/x-icon" href="/static/assets/favicon2.ico" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles2.css')}}">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <a class="navbar-brand" href="{{url_for('home')}}" TARGET="_blank"> مصنع الغزال الذهبي للمفروشات </a>
+                <img src="static/assets/img/circle.png" alt="..." style="width:2.3%;"/>
+  <div class="collapse navbar-collapse">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('sign') }}">الصفحة الرئيسية</a>
+      </li>
+        {% if not logged_in: %}
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('login') }}">تسجيل الدخول</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('register') }}">تسجيل حساب جديد</a>
+      </li>
+        {% endif %}
+
+        </ul>
+  </div>
+</nav>
+       {% block content %}
+       {% endblock %}
+</body>
+
+</html>
