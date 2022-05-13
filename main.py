@@ -13,9 +13,9 @@ import os
 # Flask App
 app = Flask(__name__)
 
-OWN_EMAIL = "rnsdoodi9@gmail.com"
-ALAA_EMAIL = "rnsdoodi9@gmail.com"
-OWN_PASSWORD = "Face@555"
+OWN_EMAIL = "goldenreem2022@gmail.com"
+ALAA_EMAIL = "goldenreem2022@gmail.com"
+OWN_PASSWORD = "tesngdnzlskwmazd"
 
 all_selections = []
 
