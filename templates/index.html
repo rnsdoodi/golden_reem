@@ -200,16 +200,34 @@
 
 
 
-                        <!-- Portfolio item 9-->
+                            <!-- Portfolio item 9-->
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal9">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="static/assets/img/portfolio/R3.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading"> منتج رقم 109 </div>
+                                <div class="portfolio-caption-subheading text-muted">السعر : SR 420  </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+
+
+
+                        <!-- Portfolio item 10-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal10">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
                                 <img class="img-fluid" src="static/assets/img/portfolio/Y1.jpg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading"> منتج رقم 109 </div>
+                                <div class="portfolio-caption-heading"> منتج رقم 110 </div>
                                 <div class="portfolio-caption-subheading text-muted">السعر : SR 420  </div>
                             </div>
                         </div>
@@ -819,7 +837,9 @@
                 </div>
             </div>
         </div>
-        <!-- Portfolio item 9 modal popup-->
+
+
+    <!-- Portfolio item 9 modal popup-->
         <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -829,7 +849,58 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase"> منتج رقم 109 </h2>
+                                    <h2 class="text-uppercase">منتج رقم 109</h2>
+<!--                                    <p class="item-intro text-muted">العدد المتوفر : 6</p>-->
+                                    <img class="img-fluid d-block mx-auto" src="static/assets/img/portfolio/R3.jpg" alt="..." />
+
+
+                                    <ul class="list-inline">
+
+                                           <li>
+                                            <strong> يحتوي المنتج على 6 قطع </strong>
+
+                                        </li>
+
+                                         <li>
+                                            <strong>Size: 160 x 250 </strong>
+
+                                        </li>
+
+                                        <li>
+                                           <li>
+                                            <strong>SR السعر : </strong>
+                                            420
+                                        </li>
+                                         <li>
+                                            <strong style="color:red;"> رمز المنتج : </strong>
+                                            <strong style="color:red;">109</strong>
+                                        </li>
+                                    </ul>
+                                    <a class="btn btn-primary btn-xl text-uppercase" href="{{url_for('customer_selection')}}">أطــلــب الآن
+                                    <i class="fas fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Portfolio item 10 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="static/assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase"> منتج رقم 110 </h2>
 <!--                                    <p class="item-intro text-muted">العدد المتوفر : 9</p>-->
                                     <img class="img-fluid d-block mx-auto" src="static/assets/img/portfolio/Y11.jpg" alt="..." />
                                     <ul class="list-inline">
@@ -851,7 +922,7 @@
                                         </li>
                                          <li>
                                             <strong style="color:red;"> رمز المنتج : </strong>
-                                            <strong style="color:red;">109</strong>
+                                            <strong style="color:red;">110</strong>
                                         </li>
                                     </ul>
                                     <a class="btn btn-primary btn-xl text-uppercase" href="{{url_for('customer_selection')}}">أطــلــب الآن
